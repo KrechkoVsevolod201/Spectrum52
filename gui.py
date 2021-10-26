@@ -8,7 +8,7 @@ from tkinter import filedialog
 
 # Create the root window
 root = Tk()
-helv36 = tkFont.Font(family='Helvetica', size=21, weight='bold')
+helv36 = tkFont.Font(family='Helvetica', size=18, weight='bold')
 # Set window title
 root.title('File Explorer')
 
@@ -59,6 +59,7 @@ def helpText():
     print(filename)
     messageVar = Message(main, text=ourMessage)
     messageVar.config(bg='lightgreen')
+    messageVar['font'] = helv36
     messageVar.pack()
     main.mainloop()
 

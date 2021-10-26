@@ -11,3 +11,8 @@
 ![Image alt](https://github.com/KrechkoVsevolod201/Spectrum52/raw/master/Screenshots/img_2.png)
 ![Image alt](https://github.com/KrechkoVsevolod201/Spectrum52/raw/master/Screenshots/img_3.png)
 ![Image alt](https://github.com/KrechkoVsevolod201/Spectrum52/raw/master/Screenshots/img_4.png)
+
+Когда все этапы прошли, запускаем gui.py
+У вас вылетит такая программа:
+![Image alt](https://github.com/KrechkoVsevolod201/Spectrum52/raw/master/Screenshots/img_5.png)
+Если не понятно, лезем в Help, там есть подсказки
