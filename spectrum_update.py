@@ -78,7 +78,7 @@ class Spectrum1():
         fig.suptitle('Vertically stacked subplots')
         ax1.plot(cols1)
         ax2.plot(cols2)
-        plt.savefig('Saves/' + filenamecopy2)
+        plt.savefig('Saves/' + filenamecopy2 + 'plot')
         plt.show()
 
 
