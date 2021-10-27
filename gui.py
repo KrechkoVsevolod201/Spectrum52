@@ -66,6 +66,10 @@ def browseFiles2():
 def startSpectrum1():
     os.system('python spectrum_update.py')
 
+# Scale start class
+def startScale():
+    os.system('python scale_func.py')
+
 # Help
 def helpText():
     main = Tk()
@@ -99,6 +103,15 @@ frame.pack()
 bottomframe = Frame(root)
 bottomframe.pack( side = BOTTOM )
 startRegularProgramButton = Button(frame, text = 'Start program', fg ='red', command=startSpectrum1)
+startRegularProgramButton['font'] = helv36
+startRegularProgramButton.pack( side = LEFT)
+
+# Scale button
+frame = Frame(root)
+frame.pack()
+bottomframe = Frame(root)
+bottomframe.pack( side = BOTTOM )
+startRegularProgramButton = Button(frame, text = 'Upscale prototype', fg ='red', command=startScale)
 startRegularProgramButton['font'] = helv36
 startRegularProgramButton.pack( side = LEFT)
 

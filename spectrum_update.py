@@ -37,10 +37,6 @@ class Spectrum1():
         # bottom to top
         rows1 = n1.mean(axis=1)
 
-        # plot histograms
-        #plt.plot(cols1)
-        #plt.show()
-        plt.savefig('Saves/' + filenamecopy1)
         '''
         _______________________________________________________________________
         '''
