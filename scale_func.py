@@ -5,7 +5,7 @@ class Scale():
         # read the image
         im = Image.open("Files\Lines.JPG")
         (width1, height1) = im.size
-        img = Image.open("Files\Risunok.jpg")
+        img = Image.open("Files\Ferum.png")
         (width2, height2) = img.size
         a = width1 / width2
         b = height1 / height2
@@ -20,8 +20,6 @@ class Scale():
         out = img.resize(size)
         # save resized image
         out.save('Saves/resize-output1.png')
-
-
 
 
 if __name__ == '__main__':
