@@ -64,7 +64,7 @@ def browseFiles2():
 
 # Spectrum start class
 def startSpectrum1():
-    os.system('python spectrum1.py')
+    os.system('python spectrum_update.py')
 
 # Help
 def helpText():

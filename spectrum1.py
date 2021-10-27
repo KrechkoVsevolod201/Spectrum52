@@ -39,16 +39,15 @@ class Spectrum1():
         # bottom to top
         rows = n.mean(axis=1)
         print(cols)
-        x = []
         # plot histograms
-        fig, ax = plt.subplots()
-        ax[1].plot(cols)
-        ax[1].plot(rows)
+        plt.plot(cols)
+        plt.savefig('Saves/' + filenamecopy2)
         plt.show()
-        fig.savefig('Saves/' + filenamecopy2)
 
-#if __name__ == '__main__':
-    #Spectrum().run("Files\Lines HIGHLIGHT.jpg")
+
+# if __name__ == '__main__':
+    # Spectrum().run("Files\Lines HIGHLIGHT.jpg")
+
 if __name__ == '__main__':
     print(__doc__)
     Spectrum1().run()

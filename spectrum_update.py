@@ -38,11 +38,9 @@ class Spectrum1():
         rows1 = n1.mean(axis=1)
 
         # plot histograms
-        fig1, ax1 = plt.subplots(2)
-        ax1[0].plot(cols1)
-        ax1[1].plot(rows1)
-        plt.show()
-        fig1.savefig('Saves/' + filenamecopy1)
+        #plt.plot(cols1)
+        #plt.show()
+        plt.savefig('Saves/' + filenamecopy1)
         '''
         _______________________________________________________________________
         '''
@@ -80,11 +78,13 @@ class Spectrum1():
         rows2 = n2.mean(axis=1)
 
         # plot histograms
-        fig2, ax2 = plt.subplots(2)
-        ax2[0].plot(cols2)
-        ax2[1].plot(rows2)
+        fig, (ax1, ax2) = plt.subplots(2)
+        fig.suptitle('Vertically stacked subplots')
+        ax1.plot(cols1)
+        ax2.plot(cols2)
+        plt.savefig('Saves/' + filenamecopy2)
         plt.show()
-        fig2.savefig('Saves/' + filenamecopy2)
+
 
 if __name__ == '__main__':
     print(__doc__)
