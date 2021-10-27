@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 class Spectrum1():
     def run(self):
-        file = open('AssistFiles/FileWay.txt', 'r')
+        file = open('AssistFiles/FileWay2.txt', 'r')
         fileway = file.read()
         print(fileway)
         file.close()
@@ -38,13 +38,14 @@ class Spectrum1():
         cols = n.mean(axis=0)
         # bottom to top
         rows = n.mean(axis=1)
-
+        print(cols)
+        x = []
         # plot histograms
-        fix, ax = plt.subplots(2)
-        ax[0].plot(cols)
+        fig, ax = plt.subplots()
+        ax[1].plot(cols)
         ax[1].plot(rows)
-        fix.show()
-        fix.savefig('Saves/' + filenamecopy2)
+        plt.show()
+        fig.savefig('Saves/' + filenamecopy2)
 
 #if __name__ == '__main__':
     #Spectrum().run("Files\Lines HIGHLIGHT.jpg")

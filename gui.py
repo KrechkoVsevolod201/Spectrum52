@@ -23,14 +23,14 @@ label_file_explorer = Label(root,
                             text="File Explorer using Tkinter",
                             width=100, height=4,
                             fg="blue")
-
+'''
 # Cleaning file
 my_file = open("AssistFiles\FileWay.txt", "w+")
 my_file.close()
-
+'''
 
 # file explorer window
-def browseFiles():
+def browseFiles1():
     filename = filedialog.askopenfilename(initialdir="/",
                                           title="Select a File",
                                           filetypes=(("Image",
@@ -42,7 +42,23 @@ def browseFiles():
     label_file_explorer.configure(text="File Opened: " + filename)
 
     # Create filename txt
-    my_file = open("AssistFiles\FileWay.txt", "w+")
+    my_file = open("AssistFiles\FileWay1.txt", "w+")
+    my_file.write(filename)
+    my_file.close()
+
+def browseFiles2():
+    filename = filedialog.askopenfilename(initialdir="/",
+                                            title="Select a File",
+                                            filetypes=(("Image",
+                                                        "*.jpg*"),
+                                                        ("all files",
+                                                        "*.*")))
+
+    # Change label contents
+    label_file_explorer.configure(text="File Opened: " + filename)
+
+    # Create filename txt
+    my_file = open("AssistFiles\FileWay2.txt", "w+")
     my_file.write(filename)
     my_file.close()
 
@@ -68,7 +84,9 @@ menu = Menu(root)
 root.config(menu=menu)
 filemenu = Menu(menu)
 menu.add_cascade(label='File', menu=filemenu)
-filemenu.add_command(label='Open...', command=browseFiles)
+filemenu.add_command(label='Open 1st photo', command=browseFiles1)
+filemenu.add_separator()
+filemenu.add_command(label='Open 2st photo', command=browseFiles2)
 filemenu.add_separator()
 filemenu.add_command(label='Exit', command=root.quit)
 helpmenu = Menu(menu)
