@@ -2,6 +2,7 @@ import numpy as np
 from PIL import Image
 import matplotlib.pyplot as plt
 
+
 class Spectrum1():
     def run(self):
         file = open('AssistFiles/FileWay1.txt', 'r')

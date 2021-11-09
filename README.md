@@ -26,3 +26,18 @@
 ![Image alt](https://github.com/KrechkoVsevolod201/Spectrum52/raw/master/Screenshots/img_5.png)
 
 Если не понятно, лезем в Help, там есть подсказки
+
+
+Как делать градуировочный граффик?
+
+1) открываем файлик exel из папки HelpFiles
+2) Там будут записанны значения длин волн в соответствии с фотографиями спектра
+3) Запускаем программу и выбирааем первый файл - фото спектра, а второй фото из атласа файл Risunok_59.jpg
+   
+   ![Image alt](https://github.com/KrechkoVsevolod201/Spectrum52/raw/master/Screenshots/img_6.png)
+4) Наводим курсор на указанные точки на фото и в правом нижнем углу записываем координату х, которая будет соответствовать нужной нам длине волны
+   ![Image alt](https://github.com/KrechkoVsevolod201/Spectrum52/raw/master/Screenshots/img_7.png)
+
+5) строим на основе координат х и длин волн из файлика граффик
+
+Дальше будет часть с вольфрамом, дополню позже
