@@ -35,8 +35,9 @@
 3) Запускаем программу и выбирааем первый файл - фото спектра, а второй фото из атласа файл Risunok_59.jpg
    
    ![Image alt](https://github.com/KrechkoVsevolod201/Spectrum52/raw/master/Screenshots/img_6.png)
-4) Наводим курсор на указанные точки на фото и в правом нижнем углу записываем координату х, которая будет соответствовать нужной нам длине волны
    ![Image alt](https://github.com/KrechkoVsevolod201/Spectrum52/raw/master/Screenshots/img_7.png)
+4) Наводим курсор на указанные точки на фото и в правом нижнем углу записываем координату х, которая будет соответствовать нужной нам длине волны
+   ![Image alt](https://github.com/KrechkoVsevolod201/Spectrum52/raw/master/Screenshots/img_8.png)
 
 5) строим на основе координат х и длин волн из файлика граффик
 
